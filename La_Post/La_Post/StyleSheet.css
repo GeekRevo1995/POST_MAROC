@@ -1,0 +1,491 @@
+﻿body , html
+{
+    border-box:box-sizing;
+    margin:0;
+    padding:0;
+    background-color:#E6E9EA;
+}
+a{text-decoration:none}
+
+.sign_out
+{
+    float: right;
+    color: #272262;
+    position: relative;
+    /* top: 17px; */
+    width: 155px;
+    border: none;
+    bottom: 35px;
+    line-height: 40px;
+    height: 36px;
+    font-family: Sans-Serif;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.sign_out:active{
+ border:none;
+ border-color:White;
+ outline:none;
+}
+.sign_out:hover{
+cursor:pointer;
+}
+/*-------------- login -----------------*/
+#login{
+ overflow:hidden;
+}
+.login_form{
+  display:flex;
+  margin:50px auto;
+  width:820px;
+}
+.logo img{
+  width: 200px;
+    height: 120px;
+    margin-top: 50px;
+}
+.left_form{
+  width:330px;
+  height:530px;
+  border-radius:15px;
+  background-color:#272262;
+  color:white;
+  z-index:3;
+-webkit-box-shadow: 7px 6px 16px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 6px 16px -6px rgba(0,0,0,0.75);
+box-shadow: 7px 6px 16px -6px rgba(0,0,0,0.75);
+}
+.left_form p{
+ letter-spacing:.1em;
+}
+.left_form .copyright{
+    position:relative;
+   top:160px;
+   color:White;
+   font-family:Sans-Serif;
+}
+.left_form .copyright i{
+   font-size:20px;
+   color:#FDDD18;
+}
+.right_form{
+  width:480px;
+  height:480px;
+  margin-top:25px;
+  background-color:#fff;
+  -webkit-box-shadow: 7px 6px 24px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 6px 24px -12px rgba(0,0,0,0.75);
+box-shadow: 7px 6px 24px -12px rgba(0,0,0,0.75);
+}
+.title{
+  text-align:center;
+  margin-top:50px;
+  font-size:25px;
+  color:#272262;
+  font-family:Sans-Serif;
+  
+}
+.header i{
+ padding-right:15px;
+}
+.user_name,.password{
+  padding-right:18px;
+ color:#272262;
+  font-size:30px !important;
+}
+.group_input{
+ margin-top:45px;
+}
+.input_form{margin-top:20px}
+.mdl-checkbox{ 
+  width:195px !important;
+  float:left;
+  margin: 30px 70px !important;
+}
+
+.btn_primary{
+  width:200px;
+  margin-top:15px;
+  height:50px;
+  border-radius:15px;
+  background-color:transparent;
+  color:#272262;
+  border-color:#FDDD18;
+  outline:none;
+  font-family:Monospace;
+  font-size:14px;
+  cursor:pointer;
+}
+#msg_error{
+  display:block;
+  margin-top:25px;
+  color:Red;
+}
+.fa-exclamation-circle{
+  font-size:22px !important
+}
+
+/* width de menu dynamic */
+.level1_static{
+ width:100% !important;
+}
+#menu_dynamic{
+ width:100% !important;
+}
+
+/***********************************
+    master page style
+***********************************/
+
+.header_page{
+  height:500px;
+  width:100%;
+  background-color:#272262;
+}
+.header_page h4{
+  font-size:20px;
+  font-family:Sans-Serif;
+  font-weight:bold;
+  color:White;
+  margin:25px auto;
+}
+.header_page p{
+  letter-spacing:.1em;
+  font-size:16px;
+  font-family:Sans-Serif;
+  color:White;
+}
+.content{ 
+   width:95%;
+   height:100%;
+   margin-top:-170px;
+   margin-bottom:100px;
+   background-color:White;
+ /*  -webkit-box-shadow: 0px 1px 13px -1px rgba(8,8,8,1);
+   -moz-box-shadow: 0px 1px 13px -1px rgba(8,8,8,1);
+    box-shadow: 0px 1px 13px -1px rgba(8,8,8,1); */
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.content ul{
+  margin:0;
+  padding:0;
+  display:flex;
+  list-style:none;
+}
+.content ul li{
+font-size: 14px;
+    font-family: Sans-Serif;
+    padding: 20px;
+    color: #272262;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin:0 auto;
+  cursor:pointer;
+    transition:all .5s ease;
+}
+.info_chef_agence{
+    margin:50px 50px;
+    height:600px;
+}   
+.info_input_form{
+display: inline-block;
+    float: left;
+     margin: 30px;
+}
+.info_chef_agence label{
+  text-transform:uppercase;
+  font-family:Sans-Serif;
+  font-size:14px;
+}
+.info_chef_agence input{
+   padding:6px;
+   margin-left:25px;
+}
+
+
+/*------------------Ajouter Utlisateur Style -------*/
+.au_form_content
+{
+    display: flex;
+}
+.au_left_form
+{
+    text-align: left;
+    margin: 50px 50px;
+    position: relative;
+    left: 50px;
+}
+.close{
+  color:White;
+  font-size:35px !important;
+  float:right;
+  margin:35px 0px;
+}
+
+.lbl
+{
+    display: block;
+    padding: 10px 0;
+    font-family: Sans-Serif;
+    font-size: 12px;
+    color: #272262;
+    text-align:left;
+    text-transform: uppercase;
+}
+.au_input
+{
+    width: 200px;
+    padding: 7px;
+}
+.au_right_form
+{
+    margin: 50px 100px;
+    display: flex;
+}
+.input select
+{
+    height: 3em;
+    width: 220px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.genererPassword
+{
+ height:3em;
+ width:140px;
+ background-color:transparent;
+ border-color:Yellow;
+    }
+    #ContentPlaceHolder1_Button1
+    {
+        margin-top:15px;
+        }
+
+#ContentPlaceHolder1_AU_GRIDVIEW {
+  position:relative;
+  right:25px;
+  width:100% !important;
+  margin:10px 50px 0 0;
+  border-collapse:inherit !important;
+}
+#ContentPlaceHolder1_AU_GRIDVIEW tr{
+ text-align:center;
+}
+/****************************************************
+                agence style
+****************************************************/
+
+.dropdow_group{
+  display:flex;
+  margin: -12px 0 0 65px;
+}
+.agence_form_content{
+  display:flex;
+}
+.agence_left_form{
+ text-align:left;
+ margin:50px 50px;
+}
+.input{
+  margin-bottom:35px;
+}
+.lbl{
+  display:block;
+  padding:10px 0;
+  font-family:Sans-Serif;
+  font-size:12px;
+  color:#272262;
+  text-transform:uppercase;
+}
+.agence_input{
+  width:200px;
+  padding:7px;
+}
+.btn{
+ color:#272262;
+ border-radius:0;
+ width:218px;
+}
+.agence_right_form{
+ margin:50px 0;
+}
+
+.drpdown_style{
+  padding:8px;
+  margin-top:10px;
+  width:180px;
+  margin-right:50px;
+}
+#ContentPlaceHolder1_list_agences {
+  position:relative;
+  right:25px;
+  width:100%;
+  margin:50px 50px 0 0;
+  border-collapse:inherit !important;
+}
+#ContentPlaceHolder1_list_agences tr{
+ text-align:center;
+}
+
+/********** table agence **********/
+ #ContentPlaceHolder1_hor_zebra {
+    font-family: Arial;
+    font-size: 11px;
+    border-collapse: collapse;
+    border: 1px solid #272262;
+    height: 100px;
+    width:600px;
+    margin-top: 45px;
+ }
+ .header_table_style{
+     font-family: Arial;
+    font-size: 13px;
+    border-collapse: collapse;
+ }
+ #ContentPlaceHolder1_GridView1{
+   width:500px;
+   margin-top:15px;
+ }
+ #ContentPlaceHolder1_hor_zebra th ,#ContentPlaceHolder1_list_agences th,#ContentPlaceHolder1_list_client th{
+    background: #272262;
+    height: 21px;
+    width: auto;
+    text-align: center;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: bolder;
+    padding: 8px;
+    border: 1px solid #272262;
+    }
+   #ContentPlaceHolder1_list_agences{
+    font-family: Arial;
+    font-size: 13px;
+    border-collapse: collapse;
+    border: 1px solid #272262;
+   } 
+
+
+/*---------------- chef agence style form -----------------*/
+  
+  .client_input{
+  width:200px;
+  padding:8px;
+ // margin-top:9px;
+}
+.drpdown_style_client{
+  padding:8px;
+  margin-bottom:50px;
+  width:218px;
+}
+.recherche_btn {
+    height: 47px;
+    border: 0;
+    width: 134px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 34px;
+}
+.client_left_form{
+ text-align:left;
+ margin:50px auto;
+ width:770px;
+}
+.client_form_content{
+  display:block;
+}
+.client_right_form{
+ margin:50px 0;
+}
+.client_left_form .row{
+  display:flex;
+}
+.client_left_form .row *{
+  margin-left:15px;
+}
+.field_add_client{
+  border:none;
+  position:relative;
+  top:25px;
+}
+.field_add_client legend{ 
+text-transform: uppercase;
+    font-family: monospace;
+    font-size: 20px;
+    color: #272262;
+}
+.dropdow_group_client{
+  display:flex;
+  margin-top:50px;
+}
+#dropdown_row{
+     margin: 0 auto;
+    width: 633px;
+}
+.client_HT_TVA{
+ display:flex;
+ margin-left:0 !important;
+ margin-right:25px;
+}
+.client_input_HT_TVA{
+ width:75px;
+  padding:8px;
+}
+.print_btn{
+    width: 68px;
+    height: 46px;
+    margin-top: 17px;
+}
+.input_print{
+    margin-bottom:30px;
+    width:200px;
+}
+.flex_shadow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    visibility: hidden;
+}
+.flexbox {
+    width: 1000px;
+    height: 100%;
+    background-color: #F9F9F9;
+    position: relative;
+    z-index: 9999;
+    left: 0;
+    right:0;
+    display: none;
+}
+.header_page_print {
+  height:200px;
+  width:100%;
+  background-color:#272262;
+}
+
+/*---------- facteur design ---------------*/
+  .list_adresse_client{
+     margin:60px auto;
+     width:800px;
+     text-align:center;
+  }
+  .changer_adresse{
+    display: flex;
+    margin: 70px auto;
+    width: 800px;
+  }
+  #Image1,#Image2,#Image3{
+  font-size: 35px;
+    position: relative;
+    top: 7px;
+  }
+  .date_input{
+    margin:0 5px;
+  }

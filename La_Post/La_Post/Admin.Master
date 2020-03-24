@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"CodeBehind="Admin.Master.cs" Inherits="La_Post.header" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta lang="fr" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="Stylesheet" href="StyleSheet.css" />
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
+<script src="Scripts/calendar-en.min.js" type="text/javascript"></script>
+<link href="Styles/calendar-blue.css" rel="stylesheet" type="text/css" />
+  <link rel="Stylesheet" href="font/font-awesome-4.6.1/css/font-awesome.min.css" />
+
+    <script language="javascript" type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <center>
+        <header class="header_page">
+       
+            <div class="logo">
+            <img src="logo-poste.png" /></div>
+            <h4>POST MAROC</h4>
+            <p>Le Contact qui vous facilité la vie </p>
+
+            </header>
+             
+        <div class="content">
+          <div class="user_name_style" style="display: inline-block;position: absolute; top: 277px; left: 55px;">        
+    <i class="fa user_name fa-user" style="color: white; float: left; margin-top: 16px;"></i> &nbsp;&nbsp 
+    <h4 id="nom_utilisateur" style="float: left;color:White;font-family:Sans-Serif;font-size:18px;" runat="server"> </h4>
+         </div>
+       <asp:LinkButton CausesValidation="false" id="sign_out" runat="server" 
+                    CssClass="sign_out"
+                    onclick="sign_out_Click" >SIGN OUT &nbsp&nbsp&nbsp<i class="fa fa-power-off" aria-hidden="true"></i></asp:LinkButton>
+        <asp:Menu runat="server" ID="menu_dynamic" style="width:100% !important;position:relative; bottom: 15px;">
+                    </asp:Menu>
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" 
+                        onload="ContentPlaceHolder1_Load">
+                    </asp:ContentPlaceHolder>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+    </center>
+    </form>
+</body>
+</html>
